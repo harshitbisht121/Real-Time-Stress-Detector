@@ -1,0 +1,112 @@
+
+body
+{
+    background:url("images/yes.jpg")center fixed no-repeat;
+    background-size: cover;
+}
+
+.container
+{
+    width:30vw;
+    height:30vw;
+     margin-right: auto;
+     margin-left: auto;
+     margin-top:5vh;
+     text-align: center;
+}
+.submit
+{
+    background-color:blue;
+    padding:10px;
+    border:none;
+    color:white;
+    width:120px;
+    font-weight: bolder;
+}
+.b 
+{
+    margin-top:600px;
+}
+.p
+{
+    color:white;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.h
+{
+    font-size:50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(
+      to bottom right,
+      rgba(255, 0, 133, 1) 0%,
+      rgba(9, 9, 121, 1) 50%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    margin-top: 150px;
+    border-radius: 50%;
+    animation: 🚀 0.5s ease alternate infinite;
+    position: relative;
+  }
+  
+  .ball::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(
+      to bottom right,
+      rgba(255, 0, 133, 1) 0%,
+      rgba(9, 9, 121, 1) 50%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    transform: scale(1.2);
+    z-index: -1;
+    opacity: 0.8;
+    border-radius: 50%;
+    filter: blur(10px);
+  }
+  
+  .plane {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 0, 133, 1) 0%,
+      rgba(9, 9, 121, 1) 50%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    position: relative;
+  }
+  
+  .plane::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 0, 133, 1) 0%,
+      rgba(9, 9, 121, 1) 50%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    transform: scale(5);
+    z-index: -1;
+    filter: blur(2px);
+  }
+  
+  @keyframes 🚀 {
+    from {
+      transform: scaleX(1.25);
+    }
+    to {
+      transform: translateY(-80px) scaleX(1);
+    }
+  }
+  
